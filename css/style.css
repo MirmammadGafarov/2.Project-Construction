@@ -1,60 +1,14 @@
 *{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 
 }
 
-.wrapper{
-    position: relative;
-    padding: 0;
+.container{
+    max-width: 1300px;
+}
+
+img{
+   width: 130px;
 }
 
 
-
-header{
-    background-color: white;
-    border-bottom: rgb(229, 229, 229) 1px solid;
-    position: fixed;
-    z-index: 999;
-}
-
-header .logo{
-    width: 100%;
-    padding: 10px 0px 0px 15px;
-}
-.btn-box button{
-    margin: 5px;
-    border: #f59090 1px solid ;
-    background-color: white;
-    width: 40px;
-    height: 38px;
-   
-}
-
-.btn-box i{
-    
-    margin-top: 5px;
-    color: #cd3232;
-    font-size: 22px;
- 
-}
-
-
-h1 { 
-    background-color:#fff;
-    overflow:hidden;
-    display:inline-block; 
-    padding:10px; 
-    font-weight:bold;
-    font-family:arial;
-    color:transparent;
-    font-size:200px;
-    position: absolute;
-    z-index: 10000;
-}
-span { 
-    background: url(http://www.color-hex.com/palettes/26323.png) -20px -20px repeat;
-    
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    display:block;
-}
