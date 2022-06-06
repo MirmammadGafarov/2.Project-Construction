@@ -12,21 +12,106 @@
 .main{
     background-position: bottom right;
     background-size: cover;
+    height: 100vh;
 }
 
 
 .header{
-    padding: 16px;
+    padding: 16px 16px 10px 16px;
+
 }
 
 
- 
+ .fixed-top{
+   background-color: white;
+   box-shadow: 3px 3px 10px #d7d7d7 !important;
+   animation: smooth-bar 0.3s ease-out;
+ }
+
+    @keyframes smooth-bar {
+      from {height: 60px;}
+      to {height: 87px;}
+    }
+
 
 
 .navbar-brand img{
     width: 130px;
     padding-bottom: 12px;
  }
+
+
+
+
+ .dropdown{
+  padding-left: 25px;
+
+
+}
+
+.dropdown.active > .nav-link,
+.dropdown.active >.nav-link i{
+  color:#ff5a30 !important;
+}
+
+.dropdown .nav-link{
+  font-size: 16px;
+  font-weight: bold;
+  color: #424551 !important;
+  padding: 0px 0px 20px 0px;
+  transition: 0.3s;
+
+}
+
+.dropdown:hover >.nav-link,
+.dropdown:hover >.nav-link i{
+  color:#ff5a30 !important;
+}
+
+
+.dropdown .nav-link i{
+  padding: 5px 0px 5px 10px;
+  font-size: 14px;
+  color: #424551;
+  transition: 0.3s;
+}
+
+.dropdown-menu{
+ 
+  animation: open-menu 0.3s ease-in;
+  box-shadow: 3px 3px 10px #d7d7d7 !important;
+  box-sizing: border-box !important;
+  margin-left: 17px !important;
+  border: rgba(207, 207, 207, 0.12) 1px solid !important;
+  
+}
+    @keyframes open-menu {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+
+
+
+
+.dropdown-item{
+    font-size: 14px;
+    color: #424551;
+    padding: 5px 15px;
+   
+    transition: 0.3s;
+}
+
+
+.dropdown-item:hover{
+  color: #ff5a30 !important;
+  background-color: white;
+}
+.dropdown-item:focus{
+  background-color: white;
+}
+
+
 
 
 
@@ -121,77 +206,6 @@
 
 
 
- .dropdown{
-    padding-left: 25px;
-  
-
- }
-
-.dropdown.active > .nav-link,
-.dropdown.active >.nav-link i{
-    color:#ff5a30 !important;
-}
-
- .dropdown .nav-link{
-    font-size: 16px;
-    font-weight: bold;
-    color: #424551 !important;
-    padding: 0px 0px 20px 0px;
-    transition: 0.3s;
-
-  }
-
-  .dropdown:hover >.nav-link,
-  .dropdown:hover >.nav-link i{
-    color:#ff5a30 !important;
-  }
-
-
-  .dropdown .nav-link i{
-    padding: 5px 0px 5px 10px;
-    font-size: 14px;
-    color: #424551;
-    transition: 0.3s;
-  }
-
-.dropdown-menu{
-   
-    animation: open-menu 0.3s ease-in;
-    box-shadow: 3px 3px 10px #d7d7d7 !important;
-    box-sizing: border-box !important;
-    margin-left: 17px !important;
-    
-  }
-      @keyframes open-menu {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
-      }
-  
- 
-
-  
-  
-  .dropdown-item{
-      font-size: 14px;
-      color: #424551;
-      padding: 5px 15px;
-     
-      transition: 0.3s;
-  }
-
-
-  .dropdown-item:hover{
-    color: #ff5a30 !important;
-    background-color: white;
-  }
-  .dropdown-item:focus{
-    background-color: white;
-  }
-
-
-
-
-
 .contact a{
     text-decoration: none;
     
@@ -217,6 +231,179 @@
 
 
 
+/*BANNER*/
+
+
+
+.banner p{
+  font-size: 18px;
+  color: #424551;
+  padding: 10px;
+}
+
+
+.display-header{
+  z-index: 100;
+ padding: 110px 10px 0px 10px;
+}
+
+
+
+.display-header h3{
+  font-size: 26px;
+  font-weight: 700;
+  padding: 10px 0px;
+ 
+}
+
+.display-header h1{
+  font-size: 64px;
+  font-weight: 700;
+  padding-bottom: 45px;
+}
+
+
+.display-header .explore-button{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff5a30;
+transition: 0.4s;
+  
+  padding: 15px 40px;
+  letter-spacing: 1px;
+  border-radius: 6px;
+}
+.display-header .explore-button:hover{
+  background-color: #ff4010;
+}
+
+
+.display-header .social-media a{
+  font-size: 18px;
+  text-decoration: none;
+  color: #787a80;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.display-header .social-media a:hover{
+  color: #ff4010;
+}
+
+
+
+
+
+
+
+
+
+.external-carousel-icon{
+  position: absolute;
+  right: 2%;
+  bottom: 40%;
+
+}
+
+.carousel-control{
+  width: 50px;
+  height: 50px;
+  
+ border-radius: 100%;
+ opacity: 1 ;
+ transition: 0.4s;
+}
+
+.carousel-control:hover{
+  background-color: #ff5a30;
+ 
+}
+
+
+.carousel-icon{
+  transition: 0.3s;
+  font-size: 20px !important;
+  color: #424551 !important;
+
+}
+
+.carousel-control:focus > .carousel-icon{
+  color: #424551 !important;
+}
+
+.carousel-control:hover > .carousel-icon{
+  color: white !important;
+}
+
+
+
+
+
+
+.carousel-control-prev {
+  left: -100px;
+}
+
+
+
+
+
+
+
+.carousel-indicators {
+  margin-right: 5% !important;
+  margin-left: 5% !important;
+}
+
+
+.carousel-indicators li {
+  overflow: visible !important;
+  width: 10em;
+  height: 2px;
+  text-indent: 1px;
+}
+
+.carousel-indicators li span{
+  position: absolute;
+  bottom: 1em !important;
+  font-size: 1.8em;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+.banner h5{
+  margin: 35px 15px;
+  font-size: 14px;
+  color: #1e212c;
+  font-weight: 400;
+  
+}
+
+
+.banner h5 a{
+  color:#ff5a30
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -229,17 +416,9 @@
 
 /* QUERY RESPOSINVESSS*/
 
-@media screen and (max-width:991px){
-  .contact{
-    display: none;
-  }
 
-  .contact-bar{
-    display: inline;
- }
- 
-  
-}
+
+
 
 
 
@@ -268,4 +447,106 @@
     }
     
 
+}
+
+
+@media screen and (max-width:991px){
+
+
+  .main{
+    height: 120vh !important;
+  }
+  
+  .header{
+    background-color: white;
+  }
+  
+    
+  
+    .contact-bar{
+      display: inline;
+   }
+   
+   .dropdown .nav-link{
+    
+    padding: 0px 0px 15px 0px;
+    
+  
+  }
+  
+  .dropdown-menu{
+    padding: 0 !important;
+    margin-left: -5px !important;
+    
+    box-shadow: none !important;
+   
+   
+    border: none !important;
+  }
+  
+  .dropdown-item{
+    padding: 5;
+    font-size: 16px;
+  }
+  
+  .contact{
+    display: none;
+  }
+  
+  
+  .display-header{
+    padding-top: 0px;
+    align-items: center !important;
+    text-align: center;
+  }
+  
+  .display-header h1{
+    font-size: 45px;
+   padding-bottom: 0px;
+  }
+  
+  
+  .banner .col-lg-8{
+    padding: 3% 10% !important;
+   
+  }
+  
+  
+  .social-media{
+    padding-top: 10px !important;
+    
+  }
+  
+  .explore-button{
+    padding: 10px 30px !important;
+    margin-top: 20px;
+  }
+  
+  
+  .banner p{
+    text-align: center;
+    font-size: 16px;
+    color: #424551;
+    padding: 10px;
+  }
+  
+  .banner h5{
+    margin: 10px 0px;
+  
+    
+  }
+  
+  
+  }
+  
+  
+
+
+
+@media screen and (max-width:768px){
+
+  .main{
+    height: 110vh !important;
+  }
+  
 }
