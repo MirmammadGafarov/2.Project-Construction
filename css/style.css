@@ -499,14 +499,89 @@ transition: 0.4s;
 
 
 
+/* secionton 2ci*/
+
+
+.section-n2 h2{
+  font-size: 46px;
+  font-weight: bold;
+  
+}
+
+
+.section-n2 p{
+  font-size: 18px;
+  color: #787a80;
+  padding: 20px;
+}
 
 
 
+.section-n2 .goals {
+  padding: 0px 48px;
+}
+
+.section-n2 .goals h5{
+  font-size: 20px;
+  padding-top: 25px ;
+  font-weight: bold;
+}
 
 
 
+.section-n2 .goals p{
+  font-size: 16px;
+  padding: 0px;
+ 
+}
 
 
+.section-n2 .goals:nth-child(2){
+  border-right: #dddddd 1px solid;
+  border-left: #dddddd 1px solid;
+}
+
+
+.question-form{
+ box-shadow: 0 0.5rem 0.5rem rgb(0 0 0 / 10%) !important;
+ background-color: white;
+
+ position: sticky;
+}
+
+.question-form h3{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.question-form label{
+  color: #424551;
+}
+
+
+.question-form ::placeholder{
+  opacity: 0.8;
+  
+}
+
+.form-control:focus{
+  border-color: rgba(255, 90, 48,0.4);
+  box-shadow: 0 0.2rem 0.5rem rgba(255, 90, 48,0.3) !important;
+}
+
+
+.send-button button{
+  padding: 9px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 16px !important;
+  background-color:#ff5a30;
+  border: none;
+}
+
+.send-button button:hover{
+  background-color: #ff4010;
+}
 
 /* QUERY RESPOSINVESSS*/
 
@@ -653,7 +728,7 @@ transition: 0.4s;
     padding: 25% 10% ;
   }
   
-
+ 
   
   }
   
@@ -670,6 +745,10 @@ transition: 0.4s;
   .iframe-wrapper{
 
     padding: 35% 10% ;
+  }
+  
+  .section-n2 .goals:nth-child(2){
+    border: none;
   }
   
 }
