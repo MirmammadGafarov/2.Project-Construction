@@ -401,6 +401,100 @@ transition: 0.4s;
 
 
 
+/*1ci bolme*/
+
+
+.section-n1 h2{
+  font-size: 46px;
+  font-weight: bold;
+  
+}
+
+
+.section-n1 p{
+  font-size: 18px;
+  color: #787a80;
+  padding: 20px;
+}
+
+
+
+
+.play-video{
+  position: relative;
+  padding: 20px 0px;
+}
+
+
+
+
+.play-button{
+  position: absolute;
+  
+  background-color: #ff5a30;
+  color: rgb(239, 239, 239);
+  
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 26px;
+  padding: 28px 31px;
+  cursor: pointer;
+  transition: 0.2s;
+
+
+}
+
+
+.play-button:hover{
+  box-shadow: #ff4010 2px 2px 50px;
+  font-size: 28px;
+  padding: 30px 33px;
+  color: white;
+}
+
+
+
+
+.make-black{
+  display: none; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 300;
+}
+
+
+
+.iframe-wrapper{
+  position: relative;
+ 
+  padding: 10% ;
+}
+
+
+
+
+
+.close-button{
+  position: absolute;
+  font-size: 28px;
+  top: 30px;
+  right: 50px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 500;
+}
+
+.close-button:hover{
+  color: #ff5a30;
+}
+
 
 
 
@@ -444,6 +538,11 @@ transition: 0.4s;
       display: flex;
       align-items: center;
       text-align: center;
+    }
+    
+    .iframe-wrapper{
+
+      padding: 20% 10% ;
     }
     
 
@@ -536,6 +635,25 @@ transition: 0.4s;
     
   }
   
+  .section-n1 h2{
+    font-size: 35px;
+ 
+    
+  }
+  
+  
+  .section-n1 p{
+    font-size: 16px;
+
+  }
+  
+  
+  .iframe-wrapper{
+
+    padding: 25% 10% ;
+  }
+  
+
   
   }
   
@@ -547,6 +665,11 @@ transition: 0.4s;
 
   .main{
     height: 110vh !important;
+  }
+  
+  .iframe-wrapper{
+
+    padding: 35% 10% ;
   }
   
 }
