@@ -667,8 +667,7 @@ color: #1e212c;
 }
 
 .section-n3 .view-services{
-  padding-top: 7%;
-  padding-bottom: 4%;
+  padding: 5% 0;
 }
 
 
@@ -690,11 +689,313 @@ color: #1e212c;
 .section-n3 .view-services h4{
   font-size: 28px;
   font-weight: bold;
- padding: 0px 50px;
+ padding: 25px 50px;
 }
 
 
+
+/*Section 4 NEW*/
+
+
+.section-n4 .container{
+  padding: 7% 0px;
+}
+
+.section-n4 .row{
+  margin: 0 !important;
+}
+
+.section-n4 h2{
+  font-size: 46px;
+  font-weight: bold;
+ 
+}
+
+
+
+.portfolio{
+  position: relative;
+  width: 390px;
+  height: 440px;
+  background-position: center;
+  background-size: cover;
+ overflow: hidden;
+
+}
+
+
+.portfolio:hover >.portfolio-bg-img{
+  transform: scale(1.2);
+}
+
+
+.portfolio-bg-img{
+  
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
+ background-repeat: no-repeat;
+ 
+}
+
+
+
+
+.portfolio-title{
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  bottom: 0;
+ 
+}
+
+.portfolio-title h3{
+  color: #1e212c;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.portfolio-title .btn{
+display: none;
+  font-weight: bold;
+  color: #ff5a30;
+  font-size: 14px;
+  border-color: rgba(255, 90, 48,0.5);
+  letter-spacing: 0.5px;
+  padding: 10px 40px;
+  margin-top: 15px;
+  
+}
+.portfolio:hover >.portfolio-title .btn{
+  display: inline-block;
+}
+
+
+
+.portfolio-title .btn:hover{
+  background-color: #ff5a30;
+  color: white;
+}
+
+
+
+/*SWIPER START*/
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 20px !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+.slider-button{
+  position: absolute;
+  right: 2%;
+  bottom: 40%;
+
+} 
+
+.slider-button-control{
+  width: 50px;
+  height: 50px;
+  
+ border-radius: 100%;
+ opacity: 1 ;
+ transition: 0.4s;
+  cursor: pointer;
+  position: absolute;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    text-align: center;
+
+ 
+}
+
+.slider-button-control:hover{
+  background-color: #ff5a30;
+ 
+}
+
+
+.slider-button-icon{
+  transition: 0.3s;
+  font-size: 20px !important;
+  color: #424551 !important;
+
+}
+
+.slider-button-control:focus > .slider-button-icon{
+  color: #424551 !important;
+}
+
+.slider-button-control:hover > .slider-button-icon{
+  color: white !important;
+}
+
+
+.slider-button-prev {
+  left: -100px !important;
+}
+
+.slider-button-next {
+  left: -50px !important;
+}
+
+
+/*SWIPER ENDS*/
+
+
+
+
+
+.section-n4 .view-portfolio{
+
+  padding: 4% 0;
+}
+
+
+.section-n4 .view-portfolio a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff5a30;
+  transition: 0.4s;
+  padding: 15px 50px !important;
+  letter-spacing: 1px;
+  border-radius: 6px;
+}
+.section-n4 .view-portfolio a:hover{
+  background-color: #ff4010;
+}
+
+.section-n4 .view-portfolio h4{
+  font-size: 28px;
+  font-weight: bold;
+ padding: 25px 50px;
+}
+
+
+
+
+
+/*SECTION N-4 OLD
+
+
+
+.card{
+  text-decoration: none;
+  position: relative;
+
+  overflow: hidden;
+  
+ }
+
+ .card-img{
+  position: relative;
+  width: 390px;
+  height: 440px;
+  top: 50% !important;
+   left: 50% !important; 
+   transform: translate(-50%, 0%) !important;
+   
+   
+ }
+
+
+
+ .card-img img{
+   position: absolute;
+   width: 390px;
+   height: 440px;
+ 
+   
+   
+ }
+
+
+ 
+
+ .card:hover  .card-body .btn{
+  display: inline-block;
+ }
+
+
+.card-body{
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+}
+
+.card-body h3{
+  color: #1e212c;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.card-body .btn{
+  display: none;
+  font-weight: bold;
+  color: #ff5a30;
+  font-size: 14px;
+  border-color: rgba(255, 90, 48,0.5);
+  letter-spacing: 0.5px;
+  padding: 10px 40px;
+  margin-top: 25px;
+  
+}
+
+.card-body .btn:hover{
+  background-color: #ff5a30;
+  color: white;
+}
+
+
+*/
 /* QUERY RESPOSINVESSS*/
+
+
 
 
 
@@ -839,7 +1140,18 @@ color: #1e212c;
     padding: 25% 10% ;
   }
   
- 
+  .section-n3 .view-services h4{
+
+    font-size: 24px;
+  }
+
+  .section-n4 h2{
+    font-size: 35px;
+    padding-left: 20px;
+  
+   
+  }
+  
   
   }
   
@@ -862,4 +1174,10 @@ color: #1e212c;
     border: none;
   }
   
+
+
 }
+
+
+
+
