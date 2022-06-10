@@ -90,10 +90,10 @@ var services = [
 
 services.forEach(function(service){
 
-document.getElementById("addCard").innerHTML += 
+document.getElementById("addServices").innerHTML += 
 
 
-`     <div class="services col-sm-6 col-lg-3  ">
+`     <div class="services col-sm-6 col-lg-3 mb-4 ">
 
 <a href="#">
   <div id="${service.id}" class="inner text-center">
@@ -128,7 +128,47 @@ setTimeout(() => {
 
 
 
+//SWIPER
 
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".test-button-next",
+    prevEl: ".test-button-prev",
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+
+    // when window width is >= 320px
+    0: {
+      pagination: {
+        el: ".swiper-pagination-hidden",
+      },
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    // when window width is >= 57px
+    576: {
+     
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 992px
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  
+  }
+});
 
 
 

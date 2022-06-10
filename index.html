@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 </head>
 <body>
     
@@ -402,7 +402,7 @@
   <p>Createx Construction Bureau is a construction giant with a full range of construction services.</p>
 
   <div class="container py-4">
-    <div class="row " id="addCard">
+    <div class="row " id="addServices">
 <!--       
       <div class="services col-sm-6 col-lg-3  ">
         <a href="#">
@@ -453,9 +453,9 @@
 
 
 
-    <div class="view-services d-flex flex-md-row justify-content-center align-items-center">
+    <div class="view-services row justify-content-center align-items-center text-center">
         <h4>Learn more about our services</h4>
-        <a class=" order-2 order-lg-1" href="#">VIEW SERVICES</a>
+        <a  href="#">VIEW SERVICES</a>
     </div> 
 
 
@@ -466,7 +466,171 @@
 
 
 
+<section class="section-n4">
+  <div class="container">
 
+
+    <div class="row pb-5 px-3">
+      <div class="col-md-8 ">
+        <h2>Browse our selected projects and learn more about our work</h2>
+      </div>
+      
+
+      <div class="col-md-4 d-none d-sm-block">
+
+        <div class="slider-button ">
+          
+          <div class=" slider-button-prev slider-button-control " >
+            <i class="slider-button-icon fa-solid fa-left-long"></i>
+          </div>
+
+          <div class="slider-button-next slider-button-control " >
+            <i class="slider-button-icon fa-solid fa-right-long"></i>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="portfolio shadow">
+            <div class="portfolio-bg-img " style="background: url(./img/portfolio-1.jpg)"></div>
+            <div class="portfolio-title text-center ">
+              <h3>Red Finger Building</h3>
+              <div class="text-muted">Business Centers</div>
+              <div class="btn btn-outline-primary text-uppercase">VIEW PROJECT</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="portfolio shadow">
+            <div class="portfolio-bg-img " style="background: url(./img/portfolio-2.jpg)"></div>
+            <div class="portfolio-title text-center ">
+              <h3>Cubes Building</h3>
+              <div class="text-muted">Business Centers</div>
+              <div class="btn btn-outline-primary text-uppercase">VIEW PROJECT</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="portfolio shadow">
+            <div class="portfolio-bg-img " style="background: url(./img/portfolio-3.jpg)"></div>
+            <div class="portfolio-title text-center ">
+              <h3>The Pencil Building</h3>
+              <div class="text-muted">Store & Malls</div>
+              <div class="btn btn-outline-primary text-uppercase">VIEW PROJECT</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="portfolio shadow">
+            <div class="portfolio-bg-img " style="background: url(./img/portfolio-4.jpg)"></div>
+            <div class="portfolio-title text-center ">
+              <h3>Modern Cottage</h3>
+              <div class="text-muted">Private Houses</div>
+              <div class="btn btn-outline-primary text-uppercase">VIEW PROJECT</div>
+            </div>
+          </div>
+        </div>
+
+
+ 
+      </div>
+     
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+
+    <div class="view-portfolio row justify-content-center align-items-center text-center">
+      <h4>Explore all our works</h4>
+      <a  href="#">VIEW PORTFOLIO</a>
+  </div> 
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+    <!-- <div class="row p-5">
+
+      <div class="col-sm-6 col-lg-4 ">
+                <a class="card shadow" href="#">
+            <div class="card-img">
+              <img class="img-fluid" src="./img/07.jpg" alt="">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title">Red Finger Building</h3>
+              <div class="text-muted">Business Centers</div>
+              <div class="btn btn-outline-primary text-uppercase">VIEW PROJECT</div>
+            </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 ">
+                <a class="card shadow" href="#">
+            <div class="card-img">
+              <img class="img-fluid" src="./img/07.jpg" alt="">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title">Red Finger Building</h3>
+              <div class="text-muted">Business Centers</div>
+              <div class="btn btn-outline-primary text-uppercase">VIEW PROJECT</div>
+            </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 ">
+                <a class="card shadow" href="#">
+            <div class="card-img">
+              <img class="img-fluid" src="./img/07.jpg" alt="">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title">Red Finger Building</h3>
+              <div class="text-muted">Business Centers</div>
+              <div class="btn btn-outline-primary text-uppercase">VIEW PROJECT</div>
+            </div>
+        </a>
+      </div>
+
+
+      
+
+
+
+
+        
+
+
+     
+
+
+
+  </div> -->
 
 
 
@@ -504,6 +668,9 @@
 <script src="./js/jquery.js"></script>
 <script src="./js/bootstrap.js"></script>
 <script src="./js/popper.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/main.js"></script>
 </body>
+
+
 </html>
