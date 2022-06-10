@@ -140,8 +140,8 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   navigation: {
-    nextEl: ".test-button-next",
-    prevEl: ".test-button-prev",
+    nextEl: ".slider-button-next",
+    prevEl: ".slider-button-prev",
   },
 
   // Responsive breakpoints
@@ -149,15 +149,11 @@ var swiper = new Swiper(".mySwiper", {
 
     // when window width is >= 320px
     0: {
-      pagination: {
-        el: ".swiper-pagination-hidden",
-      },
       slidesPerView: 1,
       spaceBetween: 30
     },
-    // when window width is >= 57px
+    // when window width is >= 320px
     576: {
-     
       slidesPerView: 2,
       spaceBetween: 20
     },
@@ -173,95 +169,33 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
+//Add products to the Section N-3 from .JSON file
+$(document).ready(function getPortfolios(){
+  fetch('/js/portfolioList.json')
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    data.portfolios.forEach(function (portfolio) {
+      document.getElementById("addPortfolio").innerHTML += 
 
-//  if(product[1].id){
+      `<div  class="swiper-slide">
+      <div class="portfolio shadow">
+        <div class="portfolio-bg-img " style="background: url('${portfolio.bgImage}')"></div>
+        <div class="portfolio-title text-center ">
+          <h3>${portfolio.name}</h3>
+          <div class="text-muted">${portfolio.type}</div>
+          <div class="btn btn-outline-primary text-uppercase">VIEW PROJECT</div>
+        </div>
+      </div>
+    </div>`; 
 
-//       $('#' + product[1].id ).on({
-//        mouseover:function(){
-//         this.style.backgroundimage = `url(${product[1].service})`;
-//          this.style.animation = `show 0.6s `;
-//       },
-//       mouseout:function(){
-//        this.style.backgroundimage = `none`;
-//        this.style.animation = `hide 1s `;
-//     }
-//   })
-// }
-
-
-
-
-
-
-// $('.inner').on({
-
-  
-//   mouseover:function(){
-//     this.style.backgroundimage = `url(./img/bg-construction.jpg)`;
-//     this.style.animation = `show 0.6s `;
-//  },
-
-
-//    mouseout:function(){
-//     this.style.backgroundimage = `none`;
-//     this.style.animation = `hide 1s `;
-//  }
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $(document).ready(function getProducts(){
-//   fetch('/Sources/new_products.json')
-//   .then(response => {
-//     return response.json();
-//   })
-//   .then(data => {
-//     data.new_products.forEach(function (product) {
-//       document.getElementById("addCard").innerHTML += 
-
-//       `<div  class="col-lg-3 col-md-4 col-sm-6 col-12">
-//          <div class="new_brand" >
-//            <div id="${product.id}" class="new_img" style="background: url('${product.firstImg}')" ></div>
-//          </div>
-//          <div class="bottom_text">
-//            <a href="#">${product.name}</a><br>
-//            <span>$${product.price}</span>
-//          </div>
-//        </div>`; 
-// //Change products' images by means of Mouse Events
-// setTimeout(() => {
-//   if(product.id){
-//     $('#' + product.id ).on({
-//       mouseenter:function(){
-//         this.style.backgroundimage = `url(${product.secondImg})`
-//       },
-//       mouseout:function(){
-//         this.style.backgroundimage = `url(${product.firstImg})`
-//       }
-//     })
-//   }
-// }, 500);
-// });
-// })
-//   .catch(error => {
-//     console.log("An error has been occured"+error)
-//     document.getElementById("addCard").innerHTML += 
-//     `<div class="p-5" style="font-size:50px; background:#0fbfa8; font-weight:600">Please open index.html in Live Server, <br>in order to see Section_3 Objects :)<div/>`;
-//   })
-// }
-// )
-
-
+});
+})
+  .catch(error => {
+    console.log("An error has been occured"+error)
+    document.getElementById("addPortfolio").innerHTML += 
+    `<div class="p-5" style="font-size:50px; background:#0fbfa8; font-weight:600">Please open index.html in Live Server, <br>in order to see Section_3 Objects :)<div/>`;
+  })
+}
+)

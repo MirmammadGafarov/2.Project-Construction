@@ -728,6 +728,9 @@ color: #1e212c;
   transform: scale(1.2);
 }
 
+.portfolio:hover >.portfolio-title{
+  bottom: 0px;
+}
 
 .portfolio-bg-img{
   
@@ -736,7 +739,7 @@ color: #1e212c;
   background-size: cover !important;
   background-position: center center !important;
  background-repeat: no-repeat;
- 
+ transition: 0.4s;
 }
 
 
@@ -747,9 +750,13 @@ color: #1e212c;
   width: 100%;
   background-color: white;
   padding: 20px;
-  bottom: 0;
+  bottom: -64px;
+  transition: 0.4s;
  
 }
+
+
+
 
 .portfolio-title h3{
   color: #1e212c;
@@ -760,7 +767,7 @@ color: #1e212c;
 
 
 .portfolio-title .btn{
-display: none;
+  
   font-weight: bold;
   color: #ff5a30;
   font-size: 14px;
@@ -768,11 +775,9 @@ display: none;
   letter-spacing: 0.5px;
   padding: 10px 40px;
   margin-top: 15px;
-  
+ 
 }
-.portfolio:hover >.portfolio-title .btn{
-  display: inline-block;
-}
+
 
 
 
@@ -879,6 +884,21 @@ display: none;
   left: -50px !important;
 }
 
+.swiper-pagination{
+  display: none;
+  bottom: -5px !important;
+}
+
+.swiper-pagination-bullet{
+  border-radius: 0 !important;
+  width: 30px !important;
+  height: 3px !important;
+ 
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #424551 !important;
+}
 
 /*SWIPER ENDS*/
 
@@ -1179,5 +1199,23 @@ display: none;
 }
 
 
+@media screen and (max-width:576px){
+  .portfolio-title{
+    bottom: 0px;
+  }
+  
+    .swiper-pagination{
+      display: block;
+    }
+
+    .section-n4 h2{
+      text-align: center;
+      font-size: 30px;
+   
+    
+     
+    }
+
+}
 
 
