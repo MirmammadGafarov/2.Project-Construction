@@ -131,7 +131,7 @@ setTimeout(() => {
 //SWIPER
 
 
-var swiper = new Swiper(".mySwiper", {
+var swiper1 = new Swiper(".s1", {
   slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
@@ -199,3 +199,57 @@ $(document).ready(function getPortfolios(){
   })
 }
 )
+
+
+
+
+//partner slider
+ var swiper2 = new Swiper(".s2", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+          delay: 1000,
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          576: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+          1200: {
+            slidesPerView: 6,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+
+
+
+      var swiper3 = new Swiper(".s3", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop: true,
+      
+      navigation: {
+        nextEl: ".s3-button-next",
+        prevEl: ".s3-button-prev",
+      },
+    });

@@ -792,8 +792,9 @@ color: #1e212c;
 .swiper {
   width: 100%;
   height: 100%;
-  padding: 20px !important;
+  
 }
+
 
 .swiper-slide {
   text-align: center;
@@ -815,6 +816,8 @@ color: #1e212c;
   align-items: center;
 }
 
+
+
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -823,6 +826,10 @@ color: #1e212c;
 }
 
 
+
+.s1{
+  padding: 20px !important;
+}
 
 
 
@@ -884,7 +891,8 @@ color: #1e212c;
   left: -50px !important;
 }
 
-.swiper-pagination{
+
+.s1-pagination{
   display: none;
   bottom: -5px !important;
 }
@@ -935,95 +943,131 @@ color: #1e212c;
 
 
 
+/*section N-5*/
 
-
-/*SECTION N-4 OLD
-
-
-
-.card{
-  text-decoration: none;
-  position: relative;
-
-  overflow: hidden;
-  
- }
-
- .card-img{
-  position: relative;
-  width: 390px;
-  height: 440px;
-  top: 50% !important;
-   left: 50% !important; 
-   transform: translate(-50%, 0%) !important;
-   
-   
- }
-
-
-
- .card-img img{
-   position: absolute;
-   width: 390px;
-   height: 440px;
- 
-   
-   
- }
-
-
- 
-
- .card:hover  .card-body .btn{
-  display: inline-block;
- }
-
-
-.card-body{
-  position: absolute;
-  width: 100%;
-  background-color: white;
-  bottom: 0;
+.section-n5{
+  padding-top: 6%;
+  background-color: #f9f9f9;
 }
 
-.card-body h3{
-  color: #1e212c;
-  font-size: 20px;
+.section-n5 h2{
+  font-size: 46px;
+  padding-bottom: 4%;
+  font-weight: bold;
+ 
+}
+
+
+
+/*Partner Swiper*/
+
+.s2 img {
+  display: block;
+  width: 120px !important;
+  height: 64px !important;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.3;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  transition: 0.4s;
+ 
+}
+
+.s2 img:hover{
+  opacity: 1;
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+}
+.s2 .swiper-slide{
+  background-color: #f9f9f9;
+}
+/*Partner Swiper end*/
+
+
+
+
+
+/*customers start*/
+.section-n5 .row{
+  padding-top: 12%;
+}
+
+ .s3{
+  height: auto;
+  
+  
+}
+
+.s3 .swiper-slide{
+  position: relative !important;
+  background-color: #f9f9f9;
+}
+
+.s3 .profile{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.s3 .profile img{
+  width: 72px;
+  height: 72px;
+  border-radius: 100% ;
+}
+
+
+.s3-slider-button{
+  position: absolute;
+  right: 2%;
+  top: 12%;
+  z-index: 600;
+} 
+
+
+
+.s3 .s3-button-prev {
+  left: -100px !important;
+}
+
+.s3 .s3-button-next {
+  left: -50px !important;
+}
+
+.s3 p{
+  color: #424551;
+  font-size: 16px;
+  padding-top: 100px;
+  padding-left: 5px;
+}
+
+.s3 h3{
+  font-size: 16px;
   font-weight: bold;
   margin: 0;
+  padding-left: 5px;
 }
 
-
-.card-body .btn{
-  display: none;
-  font-weight: bold;
-  color: #ff5a30;
+.s3 span{
   font-size: 14px;
-  border-color: rgba(255, 90, 48,0.5);
-  letter-spacing: 0.5px;
-  padding: 10px 40px;
-  margin-top: 25px;
-  
+  padding-left: 5px;
 }
 
-.card-body .btn:hover{
-  background-color: #ff5a30;
-  color: white;
+.s3-pagination{
+  display: none;
 }
 
 
-*/
 /* QUERY RESPOSINVESSS*/
 
 
 
-
-
-
-
-
-
-
+.testing-section{
+  margin-top: -3rem !important;
+  padding-top: 3rem !important;
+}
 
 @media screen and (max-width:1200px){
     
@@ -1052,7 +1096,9 @@ color: #1e212c;
       padding: 20% 10% ;
     }
     
-
+.section-n5{
+  height: 90vh;
+}
 }
 
 
@@ -1172,7 +1218,18 @@ color: #1e212c;
    
   }
   
+
+  .section-n5{
+    height: 80vh;
+  }
   
+
+  .section-n5 h2{
+    font-size: 36px;
+   
+  }
+
+
   }
   
   
@@ -1185,6 +1242,9 @@ color: #1e212c;
     height: 110vh !important;
   }
   
+
+
+
   .iframe-wrapper{
 
     padding: 35% 10% ;
@@ -1194,17 +1254,53 @@ color: #1e212c;
     border: none;
   }
   
+  .section-n5 h2{
+    font-size: 36px;
+   
+  }
+  .section-n5 h2{
+    font-size: 30px;
+   
+  }
 
+  .section-n5{
+    height: 70vh;
+  }
+  
+  .s3-slider-button{
+    display: none;
+   
+  } 
+  
+  .msg-box{
+    text-align: center;
+  }
+
+  .s3 .profile{
+
+    left: 50%;
+    transform: translate(-50%,0%);
+  }
+
+  .s3-pagination{
+    display: block;
+  }
 
 }
 
 
 @media screen and (max-width:576px){
+
+  .display-header h1{
+    font-size: 35px;
+ 
+  }
+
   .portfolio-title{
     bottom: 0px;
   }
   
-    .swiper-pagination{
+  .s1-pagination{
       display: block;
     }
 
@@ -1215,6 +1311,13 @@ color: #1e212c;
     
      
     }
+
+
+    .section-n5 h2{
+      font-size: 26px;
+     
+    }
+
 
 }
 
