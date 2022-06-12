@@ -271,22 +271,22 @@ var swiper4 = new Swiper(".s4", {
 
   breakpoints: {
     0: {
-      loop: true,
+      
       slidesPerView: 1,
       spaceBetween: 20,
     },
     576: {
-      loop: true,
+      
       slidesPerView: 2,
       spaceBetween: 20,
     },
     768: {
-      loop: true,
+      
       slidesPerView: 3,
       spaceBetween: 20,
     },
     992: {
-      loop: false,
+      
       slidesPerView: 4,
       spaceBetween: 30,
     },

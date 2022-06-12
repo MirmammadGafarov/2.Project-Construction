@@ -1191,6 +1191,138 @@ cursor: pointer;
 
 
 
+    .card img{
+      transform: scale(1);
+      
+    }
+
+
+
+
+
+
+
+
+
+/*CARD START HERE*/
+
+
+
+.section-n6 .col-lg-7{
+  padding-left: 0px;
+}
+
+.section-n6 .card img{
+  transform: scale(1);
+  transition: 0.4s;
+}
+
+.section-n6 .card:hover > a img{
+  transform: scale(1.1) !important;
+}
+
+.section-n6 .card a{
+  overflow: hidden;
+  text-decoration: none;
+} 
+
+
+
+.card-title a:hover{
+  color: #ff5a30 !important;
+}
+
+
+
+
+.section-n6 .card-body .card-title a{
+      color: #1e212c;
+      font-size: 20px;
+      font-weight: bold;
+      transition: 0.4s;
+    }
+
+    .card ul{
+      list-style: none;
+    } 
+    .card ul li{
+      margin-right: 16px;
+      color: #787a80;
+      font-size: 14px;
+      transition: 0.4s;
+    }
+
+    .card ul li a:hover{
+      color: #424551 !important;
+    }
+
+    .card ul li:nth-child(2) a{
+      border-left: #cbcbcb 1px solid;
+      border-right: #cbcbcb 1px solid;
+      padding: 0px 16px;
+      
+    }
+
+    .section-n6 .card-body i{
+      padding-right: 5px ;
+    }
+
+    .section-n6 .col-lg-5{
+      padding: 0px;
+    }
+
+.col-lg-5 .card-body{
+  padding: 16px 24px;
+}
+
+
+.col-lg-5 ul{
+  margin: 0;
+}
+
+
+
+
+.section-n6 .view-news{
+
+  padding: 4% 0;
+}
+
+
+.section-n6 .view-news a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff5a30;
+  transition: 0.4s;
+  padding: 15px 50px !important;
+  letter-spacing: 1px;
+  border-radius: 6px;
+}
+.section-n6 .view-news a:hover{
+  background-color: #ff4010;
+}
+
+.section-n6 .view-news h4{
+  font-size: 28px;
+  font-weight: bold;
+ padding: 25px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* QUERY RESPOSINVESSS*/
@@ -1228,7 +1360,35 @@ cursor: pointer;
 .section-n5{
   height: 90vh;
 }
+
+
+
+
+
+
+
+
+
+
+
+.col-lg-5 .card-body{
+padding: 16px 15px;
 }
+
+.col-lg-5 .card-text{
+  font-size: 12px;
+}
+
+
+}
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:991px){
@@ -1359,6 +1519,11 @@ cursor: pointer;
   }
 
 
+  .section-n6 .card-text a{
+    font-size: 12px;
+  }
+  
+
   }
   
   
@@ -1415,6 +1580,19 @@ cursor: pointer;
     display: block;
   }
 
+
+  .section-n6 .col-lg-7{
+    padding: 0px;
+  }
+  
+
+.section-n6 .card{
+  margin-bottom: 25px;
+}
+
+
+
+
 }
 
 
@@ -1447,6 +1625,11 @@ cursor: pointer;
      
     }
 
+
+    .section-n6 .card-text a{
+      font-size: 10px;
+    }
+    
 
 }
 
