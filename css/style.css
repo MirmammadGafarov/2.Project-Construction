@@ -1059,15 +1059,144 @@ color: #1e212c;
   display: none;
 }
 
+.section-n5 .col-md-5{
+  margin-bottom: -60px;
+}
+
+
+
+
+
+/*section N-6*/
+
+
+
+.section-n6{
+
+ background-repeat: no-repeat;
+}
+
+
+.section-n6 h2{
+  padding-top: 10%;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+
+
+
+.chart-name{
+margin-top: 15px;
+margin-bottom: 0;
+font-size: 14px;
+text-align: center !important;
+
+}
+
+.progressive-container{
+   padding: 5% 12%; 
+}
+
+
+
+.s4 .swiper-slide {
+  background: none;
+display: inline-block;
+height: 200px !important;
+cursor: pointer;
+}
+
+
+
+
+
+.front {
+  animation: fill 2s reverse;
+}
+
+.text {
+  opacity: 0;
+  transform: translateY(30%);
+  animation: display 2s forwards;
+}
+
+
+  .chart-container .back {
+  
+  stroke-width: 6;
+}
+
+  .chart-container .front {
+
+  stroke-width: 6;
+  stroke-linecap: round;
+  
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.front-client{stroke: rgb(248, 152, 40);
+              stroke-dasharray: 420;}
+.back-client{stroke: rgba(248, 152, 40,0.4);}
+
+
+.front-years{stroke: rgb(245, 47, 110);
+              stroke-dasharray: 300;}
+.back-years{stroke: rgba(245, 47, 110,0.4);}
+
+.front-hours{
+  stroke: rgb(90, 135, 252);
+  stroke-dasharray: 350;}
+
+.back-hours{stroke:rgba(90, 135, 252,0.4)}
+
+.front-projects{
+  stroke: rgb(3, 206, 164);
+  stroke-dasharray: 450;
+}
+.back-projects{
+  stroke: rgba(3, 206, 164,0.4);
+}
+
+
+
+
+
+
+
+
+
+  .chart-container .text {
+  font-size: 32px;
+  fill: #1e212c;
+  font-weight: bold;
+}
+
+
+@keyframes fill {
+        to { stroke-dasharray: 0,10000; }
+    }
+    
+    
+    @keyframes display {
+        to { 
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+
+
+
+
+
 
 /* QUERY RESPOSINVESSS*/
 
 
 
-.testing-section{
-  margin-top: -3rem !important;
-  padding-top: 3rem !important;
-}
 
 @media screen and (max-width:1200px){
     
