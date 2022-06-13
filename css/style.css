@@ -4,10 +4,17 @@
     padding: 0;
 }
 
+
+
+
+
+
 .container{
     max-width: 1300px;
 }
 
+
+/*Main section*/
 
 .main{
     background-position: bottom right;
@@ -401,7 +408,7 @@ transition: 0.4s;
 
 
 
-/*1ci bolme*/
+/*Section N-1*/
 
 
 .section-n1 h2{
@@ -499,7 +506,7 @@ transition: 0.4s;
 
 
 
-/* secionton 2ci*/
+/*Section N-2*/
 
 
 .section-n2 h2{
@@ -585,7 +592,7 @@ transition: 0.4s;
 
 
 
-/* seciton n-3*/
+/*Section N-3*/
 
 .section-n3{
   margin-top: -6rem !important;
@@ -694,7 +701,7 @@ color: #1e212c;
 
 
 
-/*Section 4 NEW*/
+/*Section N-4*/
 
 
 .section-n4 .container{
@@ -943,7 +950,7 @@ color: #1e212c;
 
 
 
-/*section N-5*/
+/*Section N-5*/
 
 .section-n5{
   padding-top: 6%;
@@ -1064,10 +1071,8 @@ color: #1e212c;
 }
 
 
-
-
-
-/*section N-6*/
+ 
+/*Section N-6*/
 
 
 
@@ -1159,13 +1164,7 @@ cursor: pointer;
   stroke: rgba(3, 206, 164,0.4);
 }
 
-
-
-
-
-
-
-
+ 
 
   .chart-container .text {
   font-size: 32px;
@@ -1197,12 +1196,7 @@ cursor: pointer;
     }
 
 
-
-
-
-
-
-
+ 
 
 /*CARD START HERE*/
 
@@ -1311,7 +1305,7 @@ cursor: pointer;
 }
 
 
-
+/*Section N-7*/
 
 
 
