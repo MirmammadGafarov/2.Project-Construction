@@ -253,3 +253,107 @@ $(document).ready(function getPortfolios(){
         prevEl: ".s3-button-prev",
       },
     });
+
+
+
+
+//progressive bar circle
+
+var swiper4 = new Swiper(".s4", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+ 
+   autoplay: {
+     disableOnInteraction: false,
+     pauseOnMouseEnter: true,
+     delay: 1000,
+   },
+
+  breakpoints: {
+    0: {
+      
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    576: {
+      
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    992: {
+      
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+});
+
+
+
+
+
+
+
+let clientValue = 0;
+
+let clientCounter = setInterval(() => {
+
+  clientValue++;
+
+  $('#clientValue').html(`${clientValue}%`)
+
+  if(clientValue == 98){
+    clearInterval(clientCounter);
+  }
+
+}, 18);
+
+
+let yearsValue = 0;
+let yearsCounter = setInterval(() => {
+  yearsValue++;
+
+  $('#yearsValue').html(yearsValue);
+ 
+
+  if(yearsValue == 20){
+    clearInterval(yearsCounter);
+  }
+
+}, 90);
+
+
+
+let hoursValue = 0;
+let hoursCounter = setInterval(() => {
+  hoursValue+=94;
+
+  $('#hoursValue').html(hoursValue);
+ 
+
+  if(hoursValue == 9588){
+    clearInterval(hoursCounter);
+  }
+
+}, 18);
+
+
+
+
+let projectsValue = 0;
+let projectCounter = setInterval(() => {
+  projectsValue++;
+
+  $('#projectsValue').html(`${projectsValue}%`);
+ 
+
+  if(projectsValue == 100){
+    clearInterval(projectCounter);
+  }
+
+}, 17);
