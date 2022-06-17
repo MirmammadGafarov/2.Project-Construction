@@ -5,7 +5,9 @@
 }
 
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 
 
@@ -1408,27 +1410,165 @@ cursor: pointer;
 
 
 
+/*FOOTER*/
 
 
-
-.testing-section{
+.footer{
   background-color: #1e212c !important;
 }
 
 
+.footer-social-media a{
+  margin-left: 8px;
+  text-decoration: none;
+  color: #787a80;
+  font-size: 18px;
+  padding: 0 5px;
+  transition: 0.4s;
+}
+
+.footer-social-media a:hover{
+  color: #ff5a30;
+}
+
+.footer-social-media img{
+  width: 130px;
+}
+
+
+.footer-social-media p {
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.6;
+  margin-left: 10px;
+}
+
+
+.subscribe h4{
+  color: white;
+  margin-bottom: 24px;
+}
+
+.subscribe input{
+  border-color: rgba(255,255,255,.3);
+  background-color: rgba(255,255,255,.12);
+  padding: 20px;
+  transition: 0.4s;
+}
+
+.subscribe input:focus{
+  border-color: white;
+  background-color: white;
+}
+
+
+.subscribe .input-group-text{
+  background-color: #ff5a30;
+  border-color: #ff5a30;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 0px 30px;
+  font-weight: bold;
+}
+
+.subscribe p{
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.6;
+  
+}
+
+
+.footer .about h6{
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+
+.footer .about span{
+  color: white;
+  margin-right: 5px;
+}
+
+.footer .about ul li{
+  margin-bottom: 8px;
+}
+
+.footer .about a{
+  
+  text-decoration: none;
+  color:white;
+  opacity: 0.6;
+  transition: 0.4s;
+}
+
+.footer .about a:hover{
+  opacity: 0.9;
+}
+
+
+.reserved span{
+  color: #fff;
+  font-size: 12px;
+}
+
+.reserved i{
+  color: #ff5a30;
+  padding: 8px;
+  font-size: 14px;
+}
+
+
+  .reserved a{
+    
+    font-size: 12px;
+    color: #fff;
+    text-decoration: underline;
+  }
 
 
 
+  .reserved a:hover{
+    text-decoration: none;
+  }
+
+
+.to-top span{
+  color: #fff;
+  margin-right: 14px;
+  font-size: 14px;
+  word-spacing: 3px;
+}
+
+.to-top a{
+ text-decoration: none;
+  background: #ff5a30;
+  width:42px ;
+  height:42px ;
+  color:white;
+  opacity:1;
+  cursor: pointer;
+  transition: all .4s;
+  border-radius: 3px;
+   
+}
+
+.to-top a:hover{
+background-color: #ff4010;
+  color:white;
+}
 
 
 
-
-
-
-
-
-
-
+.to-top i{
+  
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
 
 
 
