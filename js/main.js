@@ -203,6 +203,33 @@ $(document).ready(function getPortfolios(){
 
 
 
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+async function myFunction() {return "Hello";}
+
+myFunction().then(
+  function(value) {myDisplayer(value);},
+  function(error) {myDisplayer(error);}
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //partner slider
  var swiper2 = new Swiper(".s2", {
         slidesPerView: 1,
@@ -372,5 +399,7 @@ jarallaxEls.forEach(( el,index ) => {
 jarallax(jarallaxEls, {
 	speed: 0.8,
 })
+
+
 
 
