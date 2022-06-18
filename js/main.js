@@ -151,7 +151,7 @@ setTimeout(() => {
 function leavereminder() {
   $.ajax({
       dataType: "json",
-      url: "/js/portfolioList.json",
+      url: "js/portfolioList.json",
       async: true,
       success: function(data) {
           
