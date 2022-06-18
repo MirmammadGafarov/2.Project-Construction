@@ -1,6 +1,24 @@
+window.onload = () => {
 
-    window.onscroll = function() {
-        
+  $( "#spinner" ).fadeOut( "slow", function() {  
+  });
+
+
+};
+
+ 
+
+
+
+
+
+
+
+
+
+
+window.onscroll = function() {
+      
             if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
               $( "#header" ).addClass("fixed-top");
             } else {
@@ -130,8 +148,27 @@ setTimeout(() => {
 
 //SWIPER
 
-
-var swiper1 = new Swiper(".s1", {
+function leavereminder() {
+  $.ajax({
+      dataType: "json",
+      url: "/js/portfolioList.json",
+      async: true,
+      success: function(data) {
+          
+        data.portfolios.forEach(function (portfolio) {
+          document.getElementById("addPortfolio").innerHTML += 
+        
+          `<div  class="swiper-slide">
+          <div class="portfolio shadow">
+            <div class="portfolio-bg-img " style="background: url('${portfolio.bgImage}')"></div>
+            <div class="portfolio-title text-center ">
+              <h3>${portfolio.name}</h3>
+              <div class="text-muted">${portfolio.type}</div>
+              <div class="btn btn-outline-primary text-uppercase">VIEW PROJECT</div>
+            </div>
+          </div>
+        </div>`; 
+        var swiper1 = new Swiper(".s1", {
   slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
@@ -166,64 +203,11 @@ var swiper1 = new Swiper(".s1", {
   }
 });
 
-
-
-
-//Add products to the Section N-3 from .JSON file
-$(document).ready(function getPortfolios(){
-  fetch('/js/portfolioList.json')
-  .then(response => {
-    return response.json();
-  })
-  .then(data => {
-    data.portfolios.forEach(function (portfolio) {
-      document.getElementById("addPortfolio").innerHTML += 
-
-      `<div  class="swiper-slide">
-      <div class="portfolio shadow">
-        <div class="portfolio-bg-img " style="background: url('${portfolio.bgImage}')"></div>
-        <div class="portfolio-title text-center ">
-          <h3>${portfolio.name}</h3>
-          <div class="text-muted">${portfolio.type}</div>
-          <div class="btn btn-outline-primary text-uppercase">VIEW PROJECT</div>
-        </div>
-      </div>
-    </div>`; 
-
-});
-})
-  .catch(error => {
-    console.log("An error has been occured"+error)
-    document.getElementById("addPortfolio").innerHTML += 
-    `<div class="p-5" style="font-size:50px; background:#0fbfa8; font-weight:600">Please open index.html in Live Server, <br>in order to see Section_3 Objects :)<div/>`;
-  })
+        });
+      },
+  });
 }
-)
-
-
-
-
-function myDisplayer(some) {
-  document.getElementById("demo").innerHTML = some;
-}
-
-async function myFunction() {return "Hello";}
-
-myFunction().then(
-  function(value) {myDisplayer(value);},
-  function(error) {myDisplayer(error);}
-);
-
-
-
-
-
-
-
-
-
-
-
+leavereminder()
 
 
 
