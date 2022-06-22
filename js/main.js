@@ -46,7 +46,7 @@ var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 var services = [
   {
     id: "construction",
@@ -75,7 +75,7 @@ var services = [
   },
 ];
 
-services.forEach(function (service) {
+services.map((service) => {
   document.getElementById(
     "addServices"
   ).innerHTML += `<div class="services col-sm-6 col-lg-3 mb-4 ">
@@ -106,10 +106,10 @@ services.forEach(function (service) {
     }
   }, 200);
 });
-
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //SWIPER
 
-function leavereminder() {
+function portfolioElements() {
   $.ajax({
     dataType: "json",
     url: "js/portfolioList.json",
@@ -164,7 +164,7 @@ function leavereminder() {
     },
   });
 }
-leavereminder();
+portfolioElements();
 
 //partner slider
 var swiper2 = new Swiper(".s2", {
