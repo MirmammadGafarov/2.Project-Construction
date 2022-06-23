@@ -214,7 +214,7 @@ var swiper3 = new Swiper(".s3", {
   },
 });
 
-//progressive bar circle
+//Progressive circle bar
 
 var swiper4 = new Swiper(".s4", {
   slidesPerView: 1,
