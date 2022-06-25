@@ -1,18 +1,18 @@
-window.onload = () => {
-  $("#spinner").fadeOut("slow", function () {});
-};
+// Website Loading Spinner
+$(window).on("load", () => {
+  $("#spinner").fadeOut("slow");
+});
 
-window.onscroll = function () {
-  if (
-    document.body.scrollTop > 500 ||
-    document.documentElement.scrollTop > 500
-  ) {
+// Fixed Navbar
+$(document).scroll(() => {
+  if ($(this).scrollTop() > 500) {
     $("#header").addClass("fixed-top");
   } else {
     $("#header").removeClass("fixed-top");
   }
-};
+});
 
+//Embedding YouTube Video
 // global variable for the player
 var player;
 
@@ -27,15 +27,15 @@ function onYouTubePlayerAPIReady() {
   });
 }
 
+//To Play Player
 function onPlayerReady(event) {
-  // bind events
-
-  $(".play-button").click(function () {
+  $(".play-button").click(() => {
     $(".make-black").slideDown(300);
     player.playVideo();
   });
 
-  $(".make-black").click(function () {
+  //To Pause Player
+  $(".make-black").click(() => {
     $(".make-black").slideUp(300);
     player.pauseVideo();
   });
@@ -46,7 +46,9 @@ var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// Push Elements To #addServices in Section N::3
+//Services and Properties
 var services = [
   {
     id: "construction",
@@ -74,38 +76,36 @@ var services = [
     serviceName: "Repairs",
   },
 ];
+//Insert Objects with Iteration methods
 
-services.map((service) => {
-  document.getElementById(
-    "addServices"
-  ).innerHTML += `<div class="services col-sm-6 col-lg-3 mb-4 ">
+$.map(services, function (service) {
+  $("#addServices").append(`<div class="services col-sm-6 col-lg-3 mb-4 ">
 
-<a href="#">
-  <div id="${service.id}" class="inner text-center">
-    <div class="inner-content">
-      <img src="${service.icon}" alt="">
-      <h5>${service.serviceName}</h5>
+  <a href="#">
+    <div id="${service.id}" class="inner text-center">
+      <div class="inner-content">
+        <img src="${service.icon}" alt="">
+        <h5>${service.serviceName}</h5>
+      </div>
     </div>
-  </div>
-</a>
-</div>`;
+  </a>
+  </div>`);
 
-  setTimeout(() => {
-    if (service.id) {
-      $("#" + service.id).on({
-        mouseover: function () {
-          this.style.backgroundImage = `url(${service.image})`;
-          this.style.animation = `show 0.6s `;
-        },
+  if (service.id) {
+    $("#" + service.id).on({
+      mouseover: function () {
+        this.style.backgroundImage = `url(${service.image})`;
+        this.style.animation = `show 0.6s `;
+      },
 
-        mouseout: function () {
-          this.style.backgroundImage = `none`;
-          this.style.animation = `hide 1s `;
-        },
-      });
-    }
-  }, 200);
+      mouseout: function () {
+        this.style.backgroundImage = `none`;
+        this.style.animation = `hide 1s `;
+      },
+    });
+  }
 });
+
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //SWIPER
 
