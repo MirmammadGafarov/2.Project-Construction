@@ -52,26 +52,26 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var services = [
   {
     id: "construction",
-    image: "./img/bg-construction.jpg",
+    image: "./img/bg-construction.webp",
     icon: "./img/ic-construction.svg",
     serviceName: "Construction",
   },
 
   {
     id: "projectDevelopment",
-    image: "./img/bg-project.jpg",
+    image: "./img/bg-project.webp",
     icon: "./img/ic-project.svg",
     serviceName: "Project Development",
   },
   {
     id: "interiorDesign",
-    image: "./img/bg-interior.jpg",
+    image: "./img/bg-interior.webp",
     icon: "./img/ic-pantone.svg",
     serviceName: "Interior Design",
   },
   {
     id: "repairs",
-    image: "./img/bg-repairs.jpg",
+    image: "./img/bg-repairs.webp",
     icon: "./img/ic-repair.svg",
     serviceName: "Repairs",
   },

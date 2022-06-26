@@ -1,37 +1,28 @@
 {
-    "portfolios" : [
-        {
-            "id"         : 1,
-            "name"      : "Red Finger Building",
-            "type"      : "Business Centers",
-            "bgImage"  : "./img/portfolio-1.jpg"
-            
-        },
-        {
-            "id"         : 2,
-            "name"      : "Cubes Building",
-            "type"      : "Business Centers",
-            "bgImage"  : "./img/portfolio-2.jpg"
-            
-        },
-        {
-            "id"        : 3,
-            "name"      : "The Pencil Building",
-            "type"      : "Store & Malls",
-            "bgImage"  : "./img/portfolio-3.jpg"
-            
-        },
-        {
-            "id"         : 4,
-            "name"      : "Modern Cottage",
-            "type"      : "Private Houses",
-            "bgImage"  : "./img/portfolio-4.jpg"
-            
-        }
-    ]
-
-
-
+  "portfolios": [
+    {
+      "id": 1,
+      "name": "Red Finger Building",
+      "type": "Business Centers",
+      "bgImage": "./img/portfolio-1.webp"
+    },
+    {
+      "id": 2,
+      "name": "Cubes Building",
+      "type": "Business Centers",
+      "bgImage": "./img/portfolio-2.webp"
+    },
+    {
+      "id": 3,
+      "name": "The Pencil Building",
+      "type": "Store & Malls",
+      "bgImage": "./img/portfolio-3.webp"
+    },
+    {
+      "id": 4,
+      "name": "Modern Cottage",
+      "type": "Private Houses",
+      "bgImage": "./img/portfolio-4.webp"
+    }
+  ]
 }
-
-
