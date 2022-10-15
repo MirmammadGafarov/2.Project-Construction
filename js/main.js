@@ -27,7 +27,7 @@ function onYouTubePlayerAPIReady() {
   });
 }
 
-//To Play Player
+//To Play  Player
 function onPlayerReady(event) {
   $(".play-button").click(() => {
     $(".make-black").slideDown(300);
