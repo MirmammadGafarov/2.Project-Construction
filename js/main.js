@@ -27,15 +27,18 @@ function onYouTubePlayerAPIReady() {
   });
 }
 
-//To Play  Player
+//To Play Player
 function onPlayerReady(event) {
   $(".play-button").click(() => {
+    $(".header").fadeOut();
     $(".make-black").slideDown(300);
     player.playVideo();
   });
 
   //To Pause Player
   $(".make-black").click(() => {
+    $(".header").fadeIn();
+
     $(".make-black").slideUp(300);
     player.pauseVideo();
   });

@@ -21,6 +21,7 @@ html {
   width: 100%;
   height: 100% !important;
 }
+
 .spinner-grow {
   position: absolute;
   top: 50%;
@@ -330,16 +331,7 @@ html {
 }
 /*Carousel Ends */
 
-.banner h5 {
-  margin: 35px 15px;
-  font-size: 14px;
-  color: #1e212c;
-  font-weight: 400;
-}
-
-.banner h5 a {
-  color: #ff5a30;
-}
+ 
 /* Banner Ends */
 /* Main Section Ends */
 
@@ -1417,8 +1409,8 @@ html {
     padding: 10px;
   }
 
-  .banner h5 {
-    margin: 10px 0px;
+  .section-n1 {
+    margin-top: 40px !important;
   }
 
   .section-n1 h2 {
@@ -1460,9 +1452,17 @@ html {
     height: 110vh !important;
   }
 
+
+  .section-n1 {
+    margin-top: 0px !important;
+  }
+
   .iframe-wrapper {
     padding: 35% 10%;
   }
+
+
+
 
   .section-n2 .goals:nth-child(2) {
     border: none;
@@ -1531,3 +1531,131 @@ html {
     font-size: 10px;
   }
 }
+
+
+@media screen and (max-width: 480px) {
+
+.contact-bar{
+  display: none;
+}
+
+.banner h3{
+  font-size: 18px;
+}
+
+.banner h1{
+  font-size: 30px;
+}
+
+.banner .explore-button{
+  font-size: 12px;
+}
+
+
+.section-n1 h2{
+  font-size: 26px;
+}
+
+.section-n2 h2{
+  font-size: 30px;
+}
+
+.section-n3 h2{
+  font-size: 34px;
+}
+
+.view-services a{
+  font-size: 12px !important;
+}
+
+
+.section-n4 h2{
+  font-size: 24px;
+
+}
+
+.view-portfolio h4{
+  font-size: 22px !important;
+}
+
+.view-portfolio a{
+  font-size: 12px !important;
+
+}
+
+.section-n5 h2{
+  font-size: 20px ;
+}
+
+.section-n6 h2{
+  font-size: 24px ;
+
+}
+
+.card-body p{
+  font-size: 14px;
+}
+
+ .card-title a{
+  font-size: 18px !important;
+
+}
+.card-text a{
+ font-size: 8px !important;
+}
+
+
+.section-n6 h4{
+  font-size: 24px !important;
+}
+
+.section-n6 a{
+  font-size: 12px !important;
+}
+.section-n7 h2{
+  font-size: 20px ;
+}
+}
+
+
+
+@media screen and (max-height: 1368px) {
+
+.main{
+  height: 90vh !important;
+}
+
+.section-n5 {
+  height: 60vh;
+}
+
+}
+
+
+@media screen and (max-height: 1024px) {
+  .section-n5 {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-height: 800px) {
+
+  .main{
+    height: 110vh !important;
+  }
+  
+  .section-n5 {
+    height: 110vh;
+  }
+  
+  }
+
+  @media screen and (max-height: 600px) {
+    .main{
+      height: 120vh !important;
+    }
+    
+    .section-n5 {
+      height: 130vh;
+    }
+  }
